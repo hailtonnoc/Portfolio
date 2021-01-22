@@ -14,6 +14,8 @@ function Home()
         <Link href="/tempo">
             <a>Acessar Contador</a>
         </Link>
+
+        <br></br>
         
         <img src="/sacrotriangle2.png" alt="sacro"></img>
 
