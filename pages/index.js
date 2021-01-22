@@ -15,7 +15,7 @@ function Home()
             <a>Acessar Contador</a>
         </Link>
         
-        <img src="/midia/imagens/sacrotriangle2.png" alt="sacro"></img>
+        <img src="/sacrotriangle2.png" alt="sacro"></img>
 
         </div>
 
