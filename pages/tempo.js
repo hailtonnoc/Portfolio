@@ -14,10 +14,10 @@ function Tempo(props)
 
 export function getStaticProps()
 {
-    const dynamicDate = new Date();
-    const dynamicDateString = dynamicDate.toGMTString();
+    const staticDate = new Date();
+    const staticDateString = staticDate.toGMTString();
 
-    return {props: {staticDateString}}
+    return {props: {staticDateString}, revalidate:1}
 }
 
 export default Tempo;
