@@ -1,6 +1,6 @@
 function Home()
 {
-    return <div>Caziro Hamma pega na minha e mama </div>
+    return <div>Teste</div>
 }
 
 export default Home
