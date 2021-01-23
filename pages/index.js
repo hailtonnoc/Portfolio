@@ -16,8 +16,6 @@ function Home()
         </Link>
 
         <br></br>
-        
-        <img src="/sacrotriangle2.png" alt="sacro"></img>
 
         </div>
 

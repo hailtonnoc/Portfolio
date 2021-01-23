@@ -1,7 +1,7 @@
 function Tempo(props)
 {
     const dynamicDate = new Date();
-    const dynamicDateString = dynamicDate.toGMTString();
+    const dynamicDateString = dynamicDate.toGMTString(-3);
 
     return (
         <div>
