@@ -7,3 +7,17 @@ body
 {
     display: inline-block;
 }
+
+.jobs div
+{
+    display: inline-block;
+}
+
+#rep
+{
+    width: 1200px;
+    height: 900px;
+    -webkit-transform: scale(0.6);
+    position: relative;
+    right: 20%;
+}
