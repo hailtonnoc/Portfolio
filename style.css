@@ -20,7 +20,7 @@ header
 
 .jobs div
 {
-    display: inline;
+    display: inline-block;
 }
 
 .repositorio
