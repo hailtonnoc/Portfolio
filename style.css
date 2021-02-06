@@ -1,10 +1,10 @@
 body
 {
     font-family:'Barlow', sans-serif ;
-    background-color: khaki;
     margin-left: 0.3%;
     margin-right: 3%;
     height: 99%;
+    animation: backgroundColor 45s infinite ;
 }
 
 header
@@ -26,5 +26,30 @@ header
 .repositorio
 {
     width: 81vh;
+}
+
+@keyframes backgroundColor
+{
+    0%{background-color: #007bff;}
+    5%{background-color: #6610f2;}
+    10%{background-color: #6f42c1;}
+    15%{background-color: #e83e8c;}
+    20%{background-color: #dc3545;}
+    25%{background-color: #fd7e14;}
+    30%{background-color: #ffc107;}
+    35%{background-color: #28a745;}
+    40%{background-color: #20c997;}
+    45%{background-color: #17a2b8;}
+    50%{background-color: #fff;}
+    55%{background-color: #6c757d;}
+    60%{background-color: #343a40;}
+    65%{background-color: #007bff;}
+    70%{background-color: #6c757d;}
+    75%{background-color: #28a745;}
+    80%{background-color: #17a2b8;}
+    85%{background-color: #ffc107;}
+    90%{background-color: #dc3545;}
+    95%{background-color: #f8f9fa;}
+    100%{background-color: #343a40;}
 }
 
