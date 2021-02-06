@@ -28,6 +28,11 @@ header
     width: 81vh;
 }
 
+#repi
+{
+    position: absolute;
+}
+
 #rep
 {
     transform: scale(0.63);
