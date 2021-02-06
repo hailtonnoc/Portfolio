@@ -28,6 +28,13 @@ header
     width: 81vh;
 }
 
+#rep
+{
+    transform: scale(0.63);
+    
+}
+
+
 @keyframes backgroundColor
 {
     0%{background: #dc354693;}
