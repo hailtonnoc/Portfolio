@@ -30,16 +30,17 @@ header
 
 @keyframes backgroundColor
 {
-    0%{background-color: #dc354693;}
-    10%{background-color: #fd7d148c;}
-    20%{background-color: #ffc1078c;}
-    30%{background-color: #28a74694;}
-    40%{background-color: #20c99693;}
-    50%{background-color: #17a3b880;}
-    60%{background-color: #007bff75;}
-    70%{background-color: #6710f280;}
-    80%{background-color: #6e42c178;}
-    90%{background-color: #e83e8d7a;}
+    0%{background: #dc354693;}
+    10%{background: #fd7d148c;}
+    20%{background: #ffc1078c;}
+    30%{background: #28a74694;}
+    40%{background: #20c99693;}
+    50%{background: #17a3b880;}
+    60%{background: #007bff75;}
+    70%{background: #6710f280;}
+    80%{background: #6e42c178;}
+    90%{background: #e83e8d7a;}
+    100%{background: #fd7d148c;}
 }
 
 /*
