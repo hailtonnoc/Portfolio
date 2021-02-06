@@ -4,7 +4,7 @@ body
     margin-left: 0.3%;
     margin-right: 3%;
     height: 99%;
-    animation: backgroundColor 45s infinite ;
+    animation: backgroundColor 30s infinite ;
 }
 
 header
@@ -30,6 +30,20 @@ header
 
 @keyframes backgroundColor
 {
+    0%{background-color: #dc354693;}
+    10%{background-color: #fd7d148c;}
+    20%{background-color: #ffc1078c;}
+    30%{background-color: #28a74694;}
+    40%{background-color: #20c99693;}
+    50%{background-color: #17a3b880;}
+    60%{background-color: #007bff75;}
+    70%{background-color: #6710f280;}
+    80%{background-color: #6e42c178;}
+    90%{background-color: #e83e8d7a;}
+}
+
+/*
+{
     0%{background-color: #007bff;}
     5%{background-color: #6610f2;}
     10%{background-color: #6f42c1;}
@@ -52,4 +66,4 @@ header
     95%{background-color: #f8f9fa;}
     100%{background-color: #343a40;}
 }
-
+*/
