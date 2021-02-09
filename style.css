@@ -9,8 +9,13 @@ body
 
 header
 {
-    font-family:'Barlow', sans-serif ;
-    font-size: 1.5em;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.8em;
+}
+
+h1
+{
+    margin: 1.08%;
 }
 
 .links div
@@ -23,9 +28,14 @@ header
     display: inline-block;
 }
 
+p
+{
+    width: 99%;
+}
+
 .repositorio
 {
-    width: 81vh;
+
 }
 
 
