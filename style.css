@@ -1,26 +1,34 @@
 body
 {
+    width: 99%;
     font-family:'Barlow', sans-serif ;
+    font-size: 1.02em;
     margin-left: 0.3%;
     margin-right: 3%;
-    height: 99%;
+    padding: 1.08%;
     animation: backgroundColor 30s infinite ;
 }
 
 header
 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', cursive; 
+    /* font-family: 'Rock Salt', cursive; */
     font-size: 1.8em;
+    width: 99vh;
 }
 
 h1
 {
-    margin: 1.08%;
+    width: 81%;
+    padding-top: 18%;
+    padding-bottom: 36%;
+    margin-bottom: 0%;
 }
 
 .links div
 {
     display: inline-block;
+
 }
 
 .jobs div
@@ -42,6 +50,8 @@ p
 #rep
 {
     transform: scale(0.81);
+    position: relative;
+    left: -9%;
     
 }
 
