@@ -6,7 +6,7 @@ body
     margin-left: 0.3%;
     margin-right: 3%;
     padding: 1.08%;
-    animation: backgroundColor 30s infinite ;
+    animation: backgroundColor 18s infinite ;
 }
 
 header
@@ -25,15 +25,10 @@ h1
     margin-bottom: 0%;
 }
 
-.links div
+.links div, .jobs div
 {
     display: inline-block;
 
-}
-
-.jobs div
-{
-    display: inline-block;
 }
 
 p
@@ -41,34 +36,22 @@ p
     width: 99%;
 }
 
-.repositorio
-{
-
-}
 
 
-#rep
-{
-    transform: scale(0.81);
-    position: relative;
-    left: -9%;
-    
-}
 
 
 @keyframes backgroundColor
 {
-    0%{background: #dc354693;}
-    10%{background: #fd7d148c;}
-    20%{background: #ffc1078c;}
-    30%{background: #28a74694;}
-    40%{background: #20c99693;}
-    50%{background: #17a3b880;}
-    60%{background: #007bff75;}
-    70%{background: #6710f280;}
-    80%{background: #6e42c178;}
-    90%{background: #e83e8d7a;}
-    100%{background: #fd7d148c;}
+    0%{background: #dc35467e;}
+    18%{background: #fd7d148c;}
+    27%{background: #ffc1078c;}
+    36%{background: #28a74694;}
+    45%{background: #20c99693;}
+    54%{background: #17a3b880;}
+    63%{background: #007bff75;}
+    72%{background: #6710f280;}
+    81%{background: #6e42c178;}
+    100%{background: #e83e8d7a;}
 }
 
 /*
@@ -96,3 +79,47 @@ p
     100%{background-color: #343a40;}
 }
 */
+
+
+@media (max-width: 450px)
+{
+    .repositorio, #rep
+    {
+        transform: scale(.81);
+        position: relative;
+        left: -12.9%;
+    }
+}
+
+@media (min-width: 451px)
+{
+    .repositorio, #rep
+    {
+        transform: scale(.84);
+        position: relative;
+        left: -10.2%;
+
+    }
+}
+
+@media (min-width: 641px)
+{
+    .repositorio, #rep
+    {
+        transform: scale(.9);
+        position: relative;
+        left: -4.5%;
+
+    }
+}
+
+@media (min-width: 792px)
+{
+    .repositorio, #rep
+    {
+        transform: scale(1);
+        position: relative;
+        left: -1%;
+
+    }
+}
