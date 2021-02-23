@@ -36,7 +36,12 @@ p
     width: 99%;
 }
 
-
+summary
+{
+    font-size: 1.62em;
+    font-weight: bolder;
+    margin: 3%;
+}
 
 
 
