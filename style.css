@@ -13,13 +13,13 @@ header
 {
     height: 90%;
     width: 99%;
-    margin-top: 36%;
-    margin-bottom: 63%;
+    margin-top: 30%;
+    margin-bottom: 60%;
 }
 
 h1
 {
-    color: rgba(3, 3, 3, 0.65);
+    color: rgb(0, 0, 0);
     position: absolute;
     font-size: 300%;
     animation: fNome 6s infinite;
@@ -133,6 +133,13 @@ summary
         position: relative;
         left: -1%;
 
+    }
+    header
+    {
+        width: 99%;
+        height: 1%;
+        margin-top: 0%;
+        margin-bottom: 36%;
     }
 }
 
