@@ -11,17 +11,19 @@ body
 
 header
 {
-    font-family: 'Kaushan Script', cursive; 
-    /* font-family: 'Rock Salt', cursive; */
-    font-size: 1.8em;
-    width: 99vh;
+    height: 90%;
+    width: 99%;
+    margin-top: 36%;
+    margin-bottom: 63%;
 }
 
 h1
 {
-    width: 81%;
-    margin-top: 18%;
-    margin-bottom: 45%;
+    color: rgba(3, 3, 3, 0.65);
+    position: absolute;
+    font-size: 300%;
+    animation: fNome 6s infinite;
+    text-shadow: rgba(0, 0, 255, 0.212) 3px 0px 0px, rgba(255, 0, 0, 0.349) 0px 3px 0;
 }
 
 .links div, .jobs div
@@ -63,12 +65,33 @@ summary
     100%{background: rgba(220, 53, 70, 0.54);}
 }
 
+@keyframes fNome
+{
+    0%{font-family: 'Barlow';}
+    9%{font-family: 'Lobster', cursive;}
+    18%{font-family: 'Kaushan Script', cursive;}
+    27%{font-family: 'Amatic SC', cursive;}
+    /* 36%{font-family: 'Barrio', cursive; font-size: 240%;} */
+    45%{font-family: 'Caveat', cursive;}
+    54%{font-family: 'Dancing Script', cursive;}
+    63%{font-family: 'Kaushan Script', cursive;}
+    72%{font-family: 'Libre Barcode 39 Text', cursive;}
+    81%{font-family: 'New Rocker', cursive;}
+    /* 90%{font-family: 'Orbitron', sans-serif;} */
+    99%{font-family: 'Stick', sans-serif;}
+    
+}
+
 @keyframes furi
 {
     0%{font-size: 1em;}
     50%{font-size: 1.08em;}
     100%{font-size: 1em;}
 }
+
+
+
+
 
 @media (max-width: 450px)
 {
