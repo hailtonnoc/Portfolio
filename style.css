@@ -6,7 +6,7 @@ body
     margin-left: 0.3%;
     margin-right: 3%;
     padding: 1.08%;
-    animation: backgroundColor 18s infinite ;
+    animation: backgroundColor 27s infinite ;
 }
 
 header
@@ -20,9 +20,8 @@ header
 h1
 {
     width: 81%;
-    padding-top: 18%;
-    padding-bottom: 36%;
-    margin-bottom: 0%;
+    margin-top: 18%;
+    margin-bottom: 45%;
 }
 
 .links div, .jobs div
@@ -47,16 +46,16 @@ summary
 
 @keyframes backgroundColor
 {
-    0%{background: #dc35467e;}
-    18%{background: #fd7d148c;}
-    27%{background: #ffc1078c;}
-    36%{background: #28a74694;}
-    45%{background: #20c99693;}
-    54%{background: #17a3b880;}
-    63%{background: #007bff75;}
-    72%{background: #6710f280;}
-    81%{background: #6e42c178;}
-    100%{background: #e83e8d7a;}
+    0%{background: rgba(220, 53, 70, 0.54);}
+    18%{background: rgba(253, 125, 20, 0.54);}
+    27%{background: rgba(255, 193, 7, 0.54);}
+    36%{background: rgba(40, 167, 70, 0.54);}
+    45%{background: rgba(32, 201, 150, 0.54);}
+    54%{background: rgba(23, 163, 184, 0.54);}
+    63%{background: rgba(0, 123, 255, 0.54);}
+    72%{background: rgba(104, 18, 243, 0.54);}
+    81%{background: rgba(110, 66, 193, 0.54);}
+    100%{background: rgba(220, 53, 70, 0.54);}
 }
 
 /*
