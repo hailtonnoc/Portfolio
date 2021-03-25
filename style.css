@@ -89,10 +89,6 @@ summary
     100%{font-size: 1em;}
 }
 
-
-
-
-
 @media (max-width: 450px)
 {
     .repositorio, #rep
@@ -142,7 +138,6 @@ summary
         margin-bottom: 36%;
     }
 }
-
 
 /*
 {
