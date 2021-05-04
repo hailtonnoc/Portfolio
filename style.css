@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
 body
 {
+    
     width: 99%;
     font-family:'Barlow', sans-serif ;
     font-size: 1.02em;
@@ -19,11 +23,16 @@ header
 
 h1
 {
-    color: rgb(0, 0, 0);
+    color: #000000;
     position: absolute;
     font-size: 300%;
     animation: fNome 6s infinite;
-    text-shadow: rgba(0, 0, 255, 0.212) 3px 0px 0px, rgba(255, 0, 0, 0.349) 0px 3px 0;
+    text-shadow: #0000ff36 3px 0px 0px, #ff000059 0px 3px 0;
+}
+
+.intlink:hover
+{
+    transform: scale(1.08);
 }
 
 .links div, .jobs div
@@ -37,6 +46,7 @@ p
     width: 99%;
 }
 
+
 summary
 {
     font-size: 1.62em;
@@ -46,6 +56,7 @@ summary
 
 .rage
 {
+    position: absolute;
     animation: furi 1.8s infinite;
 }
 
@@ -68,18 +79,18 @@ summary
 @keyframes fNome
 {
     0%{font-family: 'Barlow';}
-    9%{font-family: 'Lobster', cursive;}
-    18%{font-family: 'Kaushan Script', cursive;}
-    27%{font-family: 'Amatic SC', cursive;}
-    /* 36%{font-family: 'Barrio', cursive; font-size: 240%;} */
-    45%{font-family: 'Caveat', cursive;}
-    54%{font-family: 'Dancing Script', cursive;}
-    63%{font-family: 'Kaushan Script', cursive;}
-    72%{font-family: 'Libre Barcode 39 Text', cursive;}
-    81%{font-family: 'New Rocker', cursive;}
-    /* 90%{font-family: 'Orbitron', sans-serif;} */
-    99%{font-family: 'Stick', sans-serif;}
-    
+    1%{font-family: 'Lobster', cursive;}
+    2%{font-family: 'Amatic SC', cursive;}
+    3%{font-family: 'Indie Flower', cursive;}
+    4%{font-family: 'Caveat', cursive;}
+    5%{font-family: 'Dancing Script', cursive;}
+    6%{font-family: 'Kaushan Script', cursive;}
+    7%{font-family: 'Libre Barcode 39 Text', cursive;}
+    8%{font-family: 'New Rocker', cursive;}
+    9%{font-family: 'Kristi', cursive;}
+    10%{font-family: 'Stick', sans-serif;}
+    11%{font-family: 'Kaushan Script', cursive;}
+    100%{font-family: 'Kaushan Script', cursive;}
 }
 
 @keyframes furi
@@ -164,3 +175,20 @@ summary
     100%{background-color: #343a40;}
 }
 */
+
+/* @keyframes fNome
+{
+    0%{font-family: 'Barlow';}
+    9%{font-family: 'Lobster', cursive;}
+    18%{font-family: 'Kaushan Script', cursive;}
+    27%{font-family: 'Amatic SC', cursive;}
+    36%{font-family: 'Indie Flower', cursive;}
+    45%{font-family: 'Caveat', cursive;}
+    54%{font-family: 'Dancing Script', cursive;}
+    63%{font-family: 'Kaushan Script', cursive;}
+    72%{font-family: 'Libre Barcode 39 Text', cursive;}
+    81%{font-family: 'New Rocker', cursive;}
+    90%{font-family: 'Kristi', cursive;}
+    99%{font-family: 'Stick', sans-serif;}
+    
+} */
