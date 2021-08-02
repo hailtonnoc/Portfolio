@@ -7,9 +7,7 @@ body
     width: 99%;
     font-family:'Barlow', sans-serif ;
     font-size: 1.02em;
-    margin-left: 0.3%;
-    margin-right: 3%;
-    padding: 1.08%;
+    margin: 0%;
     animation: backgroundColor 27s infinite ;
 }
 
@@ -21,10 +19,20 @@ header
     margin-bottom: 60%;
 }
 
+.bgVideo{
+	position: absolute;  
+	bottom: 69%;
+	z-index: -1000;
+    width: 100%;
+	background-size: cover; 
+}
+
 h1
 {
-    color: #000000;
+    color: #ffffff;
     position: absolute;
+    top: 9%;
+    left: 3%;
     font-size: 300%;
     animation: fNome 6s infinite;
     text-shadow: #0000ff36 3px 0px 0px, #ff000059 0px 3px 0;
