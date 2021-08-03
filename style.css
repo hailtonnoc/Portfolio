@@ -19,12 +19,12 @@ header
     margin-bottom: 60%;
 }
 
-.bgVideo{
-	position: absolute;  
-	bottom: 69%;
-	z-index: -1000;
-    width: 100%;
-	background-size: cover; 
+.bgvideo{
+    position: absolute;
+    top: -3vh;
+    width: 100%; 
+    z-index: -1000;
+    background-size: cover; 
 }
 
 h1
@@ -147,8 +147,13 @@ summary
         transform: scale(1);
         position: relative;
         left: -1%;
-
     }
+
+    .bgvideo
+    {
+        top: -15vh;
+    }
+
     header
     {
         width: 99%;
