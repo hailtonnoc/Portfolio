@@ -150,7 +150,7 @@ summary
 
     .bgvideo
     {
-        top: -15vh;
+        top: -40.5vh;
     }
 
     header
@@ -161,6 +161,8 @@ summary
         margin-bottom: 36%;
     }
 }
+
+@media (min-width: px)
 
 /*
 {
