@@ -162,9 +162,9 @@ summary
     }
 }
 
-@media (min-width: px)
+/* @media (min-width: px)
 
-/*
+
 {
     0%{background-color: #007bff;}
     5%{background-color: #6610f2;}
@@ -188,9 +188,9 @@ summary
     95%{background-color: #f8f9fa;}
     100%{background-color: #343a40;}
 }
-*/
 
-/* @keyframes fNome
+
+    @keyframes fNome
 {
     0%{font-family: 'Barlow';}
     9%{font-family: 'Lobster', cursive;}
