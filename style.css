@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kristi&display=swap&effect=shadow-multiple|anaglyph');
 
 body
 {
@@ -25,6 +25,7 @@ header
     width: 100%; 
     z-index: -1000;
     background-size: cover; 
+    border-radius: 0 0 9px 9px;
 }
 
 h1
@@ -35,7 +36,6 @@ h1
     left: 3%;
     font-size: 300%;
     animation: fNome 6s infinite;
-    text-shadow: #0000ff36 3px 0px 0px, #ff000059 0px 3px 0;
 }
 
 .intlink:hover
@@ -135,7 +135,12 @@ summary
         transform: scale(.9);
         position: relative;
         left: -4.5%;
+    }
 
+    .links
+    {
+        display: block;
+        float: right;
     }
 }
 
@@ -150,7 +155,7 @@ summary
 
     .bgvideo
     {
-        top: -40.5vh;
+        top: -45vh;
     }
 
     header
