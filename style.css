@@ -232,3 +232,26 @@ summary
     99%{font-family: 'Stick', sans-serif;}
     
 } */
+
+html::-webkit-scrollbar
+{
+    width: 9px;
+}
+
+html::-webkit-scrollbar-track
+{
+    background-color: rgb(0, 0, 0);
+
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: bisque;
+    border-radius: 12px;
+}
+
+html::-webkit-scrollbar-thumb:hover
+{
+    background:#ffffff
+}
+
