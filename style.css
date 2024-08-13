@@ -38,6 +38,15 @@ h1
     animation: fNome 6s infinite;
 }
 
+.eu_img{
+    position: absolute;
+    top: 9%;
+    right: 3%;
+    border-radius: 50%;
+    border-style:dashed;
+    border-color: #ffffff;
+}
+
 iframe{
     border-radius: 12px;
     margin: auto;
@@ -135,6 +144,12 @@ summary
         transform: scale(.81);
         position: relative;
         left: -12.9%;
+    }
+
+    h1
+    {
+        top:1%;
+        
     }
 }
 
