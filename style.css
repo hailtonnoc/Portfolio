@@ -45,6 +45,7 @@ h1
     border-radius: 50%;
     border-style:dashed;
     border-color: #ffffff;
+    width: 30%;
 }
 
 iframe{
@@ -149,7 +150,6 @@ summary
     h1
     {
         top:1%;
-        
     }
 }
 
@@ -160,7 +160,6 @@ summary
         transform: scale(.84);
         position: relative;
         left: -10.2%;
-
     }
 }
 
@@ -177,6 +176,10 @@ summary
     {
         display: block;
         float: right;
+    }
+
+    .eu_img{
+        width: 18%;
     }
 }
 
