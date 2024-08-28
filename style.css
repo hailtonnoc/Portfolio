@@ -161,6 +161,7 @@ summary
         position: relative;
         left: -10.2%;
     }
+    
 }
 
 @media (min-width: 641px)
@@ -170,6 +171,11 @@ summary
         transform: scale(.9);
         position: relative;
         left: -4.5%;
+    }
+
+    .bgvideo
+    {
+        top: -1%;
     }
 
     .links
@@ -194,7 +200,7 @@ summary
 
     .bgvideo
     {
-        top: -60vh;
+        top: -18%;
     }
 
     header
@@ -204,6 +210,15 @@ summary
         margin-top: 0%;
         margin-bottom: 36%;
     }
+}
+
+@media (min-width: 999px)
+{
+    .bgvideo
+    {
+        top: -69%;
+    }
+
 }
 
 /* @media (min-width: px)
