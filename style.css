@@ -60,6 +60,12 @@ iframe{
 
 .intro{
     margin-left: 2%;
+    margin-bottom: 1%;
+    background-color: #ffffff;
+    border-radius: 9px;
+    padding: 1%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.54);
+
 }
 
 .links div, .jobs div
@@ -179,7 +185,7 @@ summary
 
     .bgvideo
     {
-        top: -36%;
+        top: -48%;
     }
 
     header
