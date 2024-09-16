@@ -34,7 +34,7 @@ h1
     position: absolute;
     top: 9%;
     left: 3%;
-    font-size: 300%;
+    font-size: 240%;
     animation: fNome 6s infinite;
 }
 
@@ -138,34 +138,13 @@ summary
     100%{font-size: 1em;}
 }
 
-@media (max-width: 450px)
+@media (min-width: 600px)
 {
-    .repositorio, #rep
-    {
-        transform: scale(.81);
-        position: relative;
-        left: -12.9%;
-    }
-
     h1
     {
-        top:1%;
+        font-size: 360%;
     }
-}
 
-@media (min-width: 451px)
-{
-    .repositorio, #rep
-    {
-        transform: scale(.84);
-        position: relative;
-        left: -10.2%;
-    }
-    
-}
-
-@media (min-width: 641px)
-{
     .repositorio, #rep
     {
         transform: scale(.9);
@@ -189,7 +168,7 @@ summary
     }
 }
 
-@media (min-width: 810px)
+@media (min-width: 900px)
 {
     .repositorio, #rep
     {
@@ -200,7 +179,7 @@ summary
 
     .bgvideo
     {
-        top: -18%;
+        top: -36%;
     }
 
     header
@@ -209,14 +188,6 @@ summary
         height: 1%;
         margin-top: 0%;
         margin-bottom: 36%;
-    }
-}
-
-@media (min-width: 999px)
-{
-    .bgvideo
-    {
-        top: -69%;
     }
 
 }
