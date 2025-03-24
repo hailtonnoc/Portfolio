@@ -89,6 +89,8 @@ details
     padding: 1%;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 summary
@@ -96,6 +98,7 @@ summary
     font-size: 1.62em;
     font-weight: bolder;
     margin: 3%;
+    cursor: pointer;
 }
 
 .rage
@@ -104,7 +107,97 @@ summary
     animation: furi 1.8s infinite;
 }
 
+/* Estilos para a seção de projetos */
+.jobs {
+    margin-top: 2rem;
+}
 
+.jobs details {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.jobs details[open] {
+    padding-bottom: 2rem;
+}
+
+.projeto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.jobs details iframe {
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    max-width: 100%;
+}
+
+/* Controles de visualização responsiva */
+.device-controls {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 0.8rem 0;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jobs details[open] .device-controls {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.jobs details label {
+    margin: 0 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.jobs details label:hover {
+    background-color: #e8e8e8;
+    transform: translateY(-2px);
+}
+
+.jobs details input[type="radio"] {
+    margin-right: 5px;
+    opacity: 0.8;
+}
+
+.jobs details input[type="radio"]:checked + label {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.jobs details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.jobs details a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
 
 @keyframes backgroundColor
 {
@@ -172,6 +265,16 @@ summary
     .eu_img{
         width: 18%;
     }
+
+    .jobs details {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jobs details iframe {
+        max-width: 95%;
+    }
 }
 
 @media (min-width: 900px)
@@ -196,6 +299,24 @@ summary
         margin-bottom: 36%;
     }
 
+    .jobs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .jobs .intro {
+        width: 90%;
+        margin: 0 auto 2rem auto;
+    }
+    
+    .jobs details {
+        width: 90%;
+    }
+
+    .jobs details iframe {
+        max-width: 90%;
+    }
 }
 
 /* @media (min-width: px)
