@@ -78,124 +78,144 @@ p
     width: 99%;
 }
 
-details
-{
+/* Estilos para a seção de projetos */
+.project-gallery {
+    margin-left: 2%;
+    margin-bottom: 1%;
     background-color: #ffffff;
-    border-radius: 12px;
-    width: 93%;
-    margin-left: 3%;
-    margin-bottom: 3%;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.54);
+    border-radius: 9px;
     padding: 1%;
-    text-align: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.54);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-summary
-{
-    font-size: 1.62em;
-    font-weight: bolder;
-    margin: 3%;
-    cursor: pointer;
+.viewer-container {
+    padding: 1.5rem 1rem;
+    margin-bottom: 5%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.rage
-{
-    position: absolute;
-    animation: furi 1.8s infinite;
-}
-
-/* Estilos para a seção de projetos */
-.jobs {
-    margin-top: 2rem;
-}
-
-.jobs details {
-    transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.jobs details[open] {
-    padding-bottom: 2rem;
-}
-
-.projeto-container {
+#main-viewer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: relative;
 }
 
-.jobs details iframe {
-    margin: 1rem auto;
+#project-iframe {
+    margin-top: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    transition: width 0.4s ease-in-out;
     max-width: 100%;
+    border-radius: 12px;
+}
+
+#project-description {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.thumbnail-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    background-color: #ffffff;
+    border-radius: 9px;
+    padding: 1rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail.active {
+    border-color: #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.thumbnail h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1em;
+}
+
+.preview-container {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 6px;
+    pointer-events: none; /* Impede a interação com o iframe de preview */
+    border: 1px solid #e0e0e0;
+}
+
+.preview-container iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.3); /* Ajuste a escala para mostrar mais conteúdo */
+    transform-origin: 0 0;
+    width: 333.33%; /* Compensa a escala */
+    height: 333.33%;
+    border: none;
 }
 
 /* Controles de visualização responsiva */
 .device-controls {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     gap: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #ffffff;
-    padding: 0.8rem 0;
-    border-radius: 6px;
-    width: 100%;
+    background-color: #f8f8f8;
+    padding: 0.8rem;
+    border-radius: 9px;
+    width: auto;
 }
 
-.jobs details[open] .device-controls {
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 1.5rem;
-}
-
-.jobs details label {
-    margin: 0 0.5rem;
+.device-controls label {
     cursor: pointer;
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
-    background-color: #f8f8f8;
+    background-color: #e9ecef;
     transition: all 0.3s;
     display: inline-flex;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ced4da;
 }
 
-.jobs details label:hover {
-    background-color: #e8e8e8;
-    transform: translateY(-2px);
+.device-controls label:hover {
+    background-color: #dee2e6;
 }
 
-.jobs details input[type="radio"] {
-    margin-right: 5px;
-    opacity: 0.8;
+.device-controls input[type="radio"] {
+    display: none; /* Esconde o radio button real */
 }
 
-.jobs details input[type="radio"]:checked + label {
-    background-color: rgba(0, 123, 255, 0.8);
+.device-controls input[type="radio"]:checked + span {
+    background-color: #007bff;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5);
 }
 
-.jobs details a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.jobs details a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+.rage
+{
+    position: absolute;
+    animation: furi 1.8s infinite;
 }
 
 @keyframes backgroundColor
@@ -243,13 +263,6 @@ summary
         font-size: 360%;
     }
 
-    .repositorio, #rep
-    {
-        transform: scale(.9);
-        position: relative;
-        left: -4.5%;
-    }
-
     .bgvideo
     {
         top: -1%;
@@ -264,27 +277,10 @@ summary
     .eu_img{
         width: 18%;
     }
-
-    .jobs details {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .jobs details iframe {
-        max-width: 95%;
-    }
 }
 
 @media (min-width: 900px)
 {
-    .repositorio, #rep
-    {
-        transform: scale(1);
-        position: relative;
-        left: 1%;
-    }
-
     .bgvideo
     {
         top: -48%;
@@ -308,60 +304,7 @@ summary
         width: 90%;
         margin: 0 auto 2rem auto;
     }
-    
-    .jobs details {
-        width: 90%;
-    }
-
-    .jobs details iframe {
-        max-width: 90%;
-    }
 }
-
-/* @media (min-width: px)
-
-
-{
-    0%{background-color: #007bff;}
-    5%{background-color: #6610f2;}
-    10%{background-color: #6f42c1;}
-    15%{background-color: #e83e8c;}
-    20%{background-color: #dc3545;}
-    25%{background-color: #fd7e14;}
-    30%{background-color: #ffc107;}
-    35%{background-color: #28a745;}
-    40%{background-color: #20c997;}
-    45%{background-color: #17a2b8;}
-    50%{background-color: #fff;}
-    55%{background-color: #6c757d;}
-    60%{background-color: #343a40;}
-    65%{background-color: #007bff;}
-    70%{background-color: #6c757d;}
-    75%{background-color: #28a745;}
-    80%{background-color: #17a2b8;}
-    85%{background-color: #ffc107;}
-    90%{background-color: #dc3545;}
-    95%{background-color: #f8f9fa;}
-    100%{background-color: #343a40;}
-}
-
-
-    @keyframes fNome
-{
-    0%{font-family: 'Barlow';}
-    9%{font-family: 'Lobster', cursive;}
-    18%{font-family: 'Kaushan Script', cursive;}
-    27%{font-family: 'Amatic SC', cursive;}
-    36%{font-family: 'Indie Flower', cursive;}
-    45%{font-family: 'Caveat', cursive;}
-    54%{font-family: 'Dancing Script', cursive;}
-    63%{font-family: 'Kaushan Script', cursive;}
-    72%{font-family: 'Libre Barcode 39 Text', cursive;}
-    81%{font-family: 'New Rocker', cursive;}
-    90%{font-family: 'Kristi', cursive;}
-    99%{font-family: 'Stick', sans-serif;}
-    
-} */
 
 html::-webkit-scrollbar
 {
