@@ -121,12 +121,9 @@ p
 
 .thumbnail-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
     gap: 1.5rem;
     padding: 0 1rem;
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
 }
 
 .thumbnail {
