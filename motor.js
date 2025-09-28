@@ -132,6 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
     widthOptions.forEach(option => {
         option.addEventListener('change', function() {
             projectIframe.width = this.value;
+            // Recarrega o iframe para reiniciar animações
+            projectIframe.src = projectIframe.src;
         });
     });
 });
